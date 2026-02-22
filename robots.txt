@@ -1,0 +1,21 @@
+# robots.txt for Golden Horseshoe Kitchen Cleaning
+# https://goldenhorseshoekitchencleaning.ca
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://goldenhorseshoekitchencleaning.ca/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
