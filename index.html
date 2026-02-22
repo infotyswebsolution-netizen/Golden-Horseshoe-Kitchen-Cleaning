@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   
   <!-- Primary SEO Meta Tags -->
   <title>Commercial Kitchen Cleaning Hamilton | Restaurant Equipment Deep Cleaning Golden Horseshoe Ontario</title>
-  <meta name="description" content="Professional commercial kitchen equipment deep cleaning in Hamilton, Burlington, St. Catharines, Niagara Falls & the Golden Horseshoe. Fryer cleaning, exhaust hood cleaning, flat top restoration. NFPA 96 compliant. $2M insured. Free quotes. Call (647) 528-3807." />
+  <meta name="description" content="Professional commercial kitchen equipment deep cleaning in Hamilton, Burlington, St. Catharines, Niagara Falls & the Golden Horseshoe. Fryer cleaning, exhaust hood cleaning, flat top restoration. NFPA 96 compliant. $2M insured. Free quotes. Call +1(289) 228-6558." />
   <meta name="keywords" content="commercial kitchen cleaning Hamilton, restaurant equipment cleaning Burlington, exhaust hood cleaning Ontario, fryer deep cleaning Golden Horseshoe, commercial kitchen deep clean St Catharines, NFPA 96 hood cleaning Niagara, flat top grill cleaning Oakville, oven cleaning Mississauga, commercial kitchen sanitization Brampton, restaurant deep cleaning Milton, kitchen equipment restoration Grimsby, grease trap cleaning Stoney Creek, commercial oven cleaning Ancaster, industrial kitchen cleaning Dundas, exhaust system cleaning Waterdown, kitchen hood cleaning near me, restaurant cleaning service Ontario, commercial kitchen maintenance Hamilton, fire code compliant kitchen cleaning, health inspection kitchen cleaning" />
   
   <!-- Canonical URL -->
@@ -59,8 +59,10 @@
       --gold:#c9a84c;--gold2:#a57a28;--glow:rgba(201,168,76,0.12);--r:4px;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{scroll-behavior:smooth;font-size:16px;}
-    body{background:var(--c900);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.65;overflow-x:hidden;}
+    /* Prevent flex/grid overflow on small screens */
+    .container,.hero-inner,.stats-inner,.risk-layout,.svc-grid,.steps,.test-grid,.gal-grid,.footer-grid,.contact-layout,.faq-layout,.area-layout{min-width:0;}
+    html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%;}
+    body{background:var(--c900);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.65;overflow-x:hidden;-webkit-tap-highlight-color:transparent;}
     img{display:block;max-width:100%;}
     a{color:inherit;text-decoration:none;}
     .container{width:100%;max-width:1160px;margin:0 auto;padding:0 24px;}
@@ -77,8 +79,8 @@
     .btn-ghost:hover{border-color:var(--gold);color:var(--gold);}
 
     /* MOBILE CALL BAR */
-    .mcb{display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;background:var(--gold);padding:14px 20px;align-items:center;justify-content:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c900);box-shadow:0 -4px 24px rgba(0,0,0,.4);}
-    .mcb a{color:var(--c900);display:flex;align-items:center;gap:10px;}
+    .mcb{display:none;position:fixed;bottom:0;left:0;right:0;z-index:998;background:var(--gold);padding:18px 20px;align-items:center;justify-content:center;gap:10px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1rem;letter-spacing:.1em;text-transform:uppercase;color:var(--c900);box-shadow:0 -6px 32px rgba(0,0,0,.5);-webkit-tap-highlight-color:transparent;}
+    .mcb a{color:var(--c900);display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:4px 0;-webkit-tap-highlight-color:transparent;text-align:center;word-break:break-word;white-space:normal;}
 
     /* NAV */
     nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:16px 32px;background:rgba(14,15,15,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,168,76,.15);transition:all .3s;}
@@ -93,19 +95,19 @@
     .nav-cta:hover{background:var(--gold2)!important;color:var(--white)!important;}
     .ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;}
     .ham span{display:block;width:22px;height:2px;background:var(--white);}
-    .mob-nav{display:none;position:fixed;inset:0;z-index:1000;background:var(--c900);flex-direction:column;align-items:center;justify-content:center;gap:30px;}
+    .mob-nav{display:none;position:fixed;inset:0;z-index:1000;background:var(--c900);flex-direction:column;align-items:center;justify-content:center;gap:30px;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
     .mob-nav.open{display:flex;}
     .mob-close{position:absolute;top:22px;right:26px;background:none;border:none;color:var(--white);font-size:1.8rem;cursor:pointer;}
     .mob-nav a{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.4rem;letter-spacing:.1em;text-transform:uppercase;color:var(--white);}
     .mob-nav a:hover{color:var(--gold);}
 
     /* HERO */
-    #hero{min-height:auto;height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;}
+    #hero{min-height:auto;height:100vh;height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden;}
     .hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(14,15,15,.97) 0%,rgba(14,15,15,.72) 52%,rgba(14,15,15,.93) 100%),url('assets/hero-bg.jpg') center/cover no-repeat;}
     .hero-noise{position:absolute;inset:0;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px 200px;}
     .hero-stripe{position:absolute;top:0;right:0;width:3px;height:100%;background:linear-gradient(to bottom,transparent,var(--gold),transparent);}
     .hero-inner{position:relative;z-index:2;padding:85px 24px 20px;max-width:1160px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 370px;gap:50px;align-items:start;}
-    .hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,168,76,.4);padding:6px 14px;border-radius:30px;margin-bottom:22px;font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);animation:fsd .8s ease both;}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(201,168,76,.4);padding:6px 14px;border-radius:30px;margin-bottom:22px;font-family:'Barlow Condensed',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);animation:fsd .8s ease both;max-width:100%;flex-wrap:wrap;}
     .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
     @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(1.3);}}
     .hero-h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(2.4rem,5vw,4rem);line-height:1.05;color:var(--white);margin-bottom:18px;animation:fsd .8s .1s ease both;}
@@ -235,7 +237,7 @@
     .ba-tag{position:absolute;top:8px;padding:2px 8px;font-family:'Barlow Condensed',sans-serif;font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-radius:2px;}
     .ba-side:first-child .ba-tag{left:8px;background:rgba(192,57,43,.85);color:#fff;}
     .ba-side:last-child .ba-tag{right:8px;background:rgba(39,174,96,.85);color:#fff;}
-    .ba-cap{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;}
+    .ba-cap{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
     .ba-cap h4{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;color:var(--white);}
     .ba-cap span{font-size:.72rem;color:var(--gold);font-family:'Barlow Condensed',sans-serif;letter-spacing:.08em;}
     .gal-note{text-align:center;margin-top:30px;}
@@ -340,60 +342,84 @@
       .test-grid{grid-template-columns:1fr;}
       .hero-h1{font-size:clamp(2rem,6vw,2.8rem);}
       .hero-sub{font-size:.95rem;}
-      .hero-btns{flex-direction:column;gap:12px;}
-      .hero-btns .btn{width:100%;justify-content:center;text-align:center;}
-      .hero-trust{flex-direction:column;gap:16px;}
+      .hero-btns{flex-direction:column;gap:14px;}
+      .hero-btns .btn{width:100%;justify-content:center;text-align:center;min-height:48px;}
+      .hero-trust{flex-direction:column;gap:18px;}
       .stats-inner{flex-direction:column;}
-      .sb{max-width:100%;width:100%;border-right:none;border-bottom:1px solid rgba(201,168,76,.14);padding:22px 18px;}
+      .sb{max-width:100%;width:100%;border-right:none;border-bottom:1px solid rgba(201,168,76,.14);padding:24px 20px;}
       .sb:last-child{border-bottom:none;}
       .h2{font-size:clamp(1.5rem,4vw,2.2rem);}
-      section{padding:60px 0;}
+      section{padding:64px 0;}
+      .container{padding:0 20px;}
+      .sc{padding:28px 24px;}
+      .tc{padding:28px 24px;}
+      .fi-q{min-height:52px;padding:18px 20px;}
     }
     @media(max-width:580px){
       .svc-grid{grid-template-columns:1fr;}
       .form-row{grid-template-columns:1fr;}
-      .form-box{padding:26px 18px;}
-      .mcb{display:flex;}
-      body{padding-bottom:62px;}
+      .form-box{padding:28px 20px;}
+      .mcb{display:flex;padding:20px 24px;padding-bottom:calc(20px + env(safe-area-inset-bottom));box-shadow:0 -8px 40px rgba(0,0,0,.55);}
+      body{padding-bottom:calc(78px + env(safe-area-inset-bottom));}
       .footer-bottom{flex-direction:column;text-align:center;}
-      section{padding:50px 0;}
-      .container{padding:0 16px;}
-      .hero-h1{font-size:clamp(1.8rem,7vw,2.4rem);}
-      .hero-inner{padding:100px 16px 70px;}
+      section{padding:56px 0;}
+      .container{padding:0 20px;}
+      .hero-h1{font-size:clamp(1.9rem,7.5vw,2.5rem);line-height:1.15;}
+      .hero-inner{padding:calc(90px + env(safe-area-inset-top)) 20px 80px;}
+      .hero-sub{font-size:1rem;line-height:1.7;}
+      .hero-btns .btn{min-height:52px;font-size:.9rem;padding:16px 24px;}
+      .hero-trust{gap:18px;margin-top:28px;}
+      .ti{min-height:48px;}
       .steps{grid-template-columns:1fr;}
-      .step{padding:26px 18px 22px;}
-      .sc{padding:26px 20px;}
-      .rcard{flex-direction:column;gap:10px;}
+      .step{padding:28px 20px 24px;}
+      .sc{padding:28px 22px;box-shadow:0 2px 12px rgba(0,0,0,.2);}
+      .rcard{flex-direction:column;gap:12px;padding:18px 20px;}
       .rcard-icon{font-size:1.5rem;}
-      .ba-imgs::after{width:24px;height:24px;font-size:.55rem;}
-      .cities{grid-template-columns:1fr;gap:4px;}
-      .cdetails li{flex-direction:column;text-align:center;gap:8px;}
-      .ci{margin:0 auto;}
+      .ba-imgs::after{width:26px;height:26px;font-size:.55rem;}
+      .cities{grid-template-columns:1fr;gap:6px;}
+      .cdetails li{flex-direction:column;text-align:center;gap:10px;padding:12px 0;}
+      .cdetails li a{font-size:1rem;min-height:44px;display:inline-flex;align-items:center;justify-content:center;}
+      .ci{margin:0 auto;width:44px;height:44px;font-size:1rem;}
       .ct{text-align:center;}
-      .fi-q{padding:16px 18px;font-size:.88rem;}
-      .fi-a-inner{padding:0 18px 16px;font-size:.84rem;}
-      .tc{padding:24px 20px;}
-      .test-hdr p,.gal-hdr p{font-size:.8rem;}
-      .area-note{font-size:.8rem;}
-      .emergency-box{padding:14px 15px;}
-      .emergency-box h4{font-size:.78rem;}
-      .emergency-box p{font-size:.76rem;}
+      .fi-q{padding:20px 22px;font-size:.9rem;min-height:56px;display:flex;align-items:center;}
+      .fi-a-inner{padding:0 22px 20px;font-size:.86rem;line-height:1.75;}
+      .tc{padding:28px 22px;border:1px solid rgba(201,168,76,.06);}
+      .test-hdr p,.gal-hdr p{font-size:.82rem;}
+      .area-note{font-size:.82rem;padding:16px 18px;}
+      .emergency-box{padding:18px 18px;}
+      .emergency-box h4{font-size:.8rem;}
+      .emergency-box p{font-size:.78rem;}
+      .emergency-box a{display:inline-block;margin-top:6px;padding:8px 0;min-height:44px;line-height:1.4;}
+      .btn{min-height:48px;padding:14px 24px;}
+      .nav{padding:14px 20px;padding-top:calc(14px + env(safe-area-inset-top));}
+      .ham{min-width:44px;min-height:44px;padding:10px;justify-content:center;}
+      .mob-nav a{min-height:48px;display:flex;align-items:center;justify-content:center;padding:8px 0;}
+      .mob-nav .btn-gold{min-height:52px;}
+      .mob-close{min-width:48px;min-height:48px;top:calc(18px + env(safe-area-inset-top));right:20px;}
+      .stats-band .sb{padding:24px 20px;}
+      .sb-num{font-size:2rem;}
+      .ba{padding-bottom:2px;border-radius:6px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.25);}
+      .ba-cap{padding:18px 20px;}
+      .form-box .fg input,.form-box .fg select,.form-box .fg textarea{min-height:48px;font-size:16px;}
+      .form-submit .btn-gold{min-height:52px;}
     }
     @media(max-width:400px){
-      .hero-h1{font-size:1.7rem;}
+      .hero-h1{font-size:1.75rem;}
       .nav-logo-text{font-size:.72rem;}
       .nav-logo-icon{width:36px;height:36px;}
-      .btn{font-size:.82rem;padding:13px 22px;}
+      .btn{font-size:.84rem;padding:14px 24px;min-height:48px;}
       .lbl{font-size:.65rem;}
-      .h2{font-size:1.4rem;}
+      .h2{font-size:1.45rem;}
       .bar{width:40px;margin:14px 0 22px;}
+      .container{padding:0 16px;}
+      .mcb{font-size:.95rem;padding:18px 16px;}
     }
   </style>
 </head>
 <body>
 
   <!-- Sticky Mobile Call Bar -->
-  <div class="mcb"><a href="tel:+16475283807">📞 Call Now for a Free Quote — (647) 528-3807</a></div>
+  <div class="mcb"><a href="tel:+12892286558">📞 Call Now for a Free Quote — +1(289) 228-6558</a></div>
 
   <!-- NAV -->
   <nav id="nav">
@@ -435,7 +461,7 @@
         <p class="hero-sub">Equipment specialists — not general cleaners. We restore commercial fryers, flat tops, grills, ovens, and exhaust hoods to like-new condition while keeping your kitchen health-code and fire-code compliant.</p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-gold">✦ Get Your Free Quote</a>
-          <a href="tel:+16475283807" class="btn btn-ghost">📞 (647) 528-3807</a>
+          <a href="tel:+12892286558" class="btn btn-ghost">📞 +1(289) 228-6558</a>
         </div>
         <div class="hero-trust">
           <div class="ti"><div class="ti-icon">🛡️</div><div class="ti-text"><strong>$2M Insured</strong>Certificate on Request</div></div>
@@ -710,7 +736,7 @@
           <div class="bar"></div>
           <p>No obligation. No pressure. We'll visit your kitchen, assess every piece of equipment, and provide a detailed custom quote. Most assessments take 20–30 minutes and we can typically schedule within the week.</p>
           <ul class="cdetails">
-            <li><div class="ci">📞</div><div class="ct"><strong><a href="tel:+16475283807">(647) 528-3807</a></strong>Click to call — mobile friendly</div></li>
+            <li><div class="ci">📞</div><div class="ct"><strong><a href="tel:+12892286558">+1(289) 228-6558</a></strong>Click to call — mobile friendly</div></li>
             <li><div class="ci">✉️</div><div class="ct"><strong><a href="mailto:info.goldenhorseshoekitchen@gmail.com">info.goldenhorseshoekitchen@gmail.com</a></strong>Response within 24 hours</div></li>
             <li><div class="ci">📍</div><div class="ct"><strong>Golden Horseshoe Region, Ontario</strong>Hamilton · Burlington · St. Catharines · Niagara Falls and surrounding areas</div></li>
             <li><div class="ci">🕐</div><div class="ct"><strong>By Appointment — Off-Hours Service</strong>Nights, early mornings, and closed days</div></li>
@@ -768,7 +794,7 @@
         <div class="fc">
           <h5>Contact</h5>
           <ul>
-            <li><a href="tel:+16475283807">(647) 528-3807</a></li>
+            <li><a href="tel:+12892286558">+1(289) 228-6558</a></li>
             <li><a href="mailto:info.goldenhorseshoekitchen@gmail.com">info.goldenhorseshoekitchen@gmail.com</a></li>
             <li><a href="#area">Golden Horseshoe Region, ON</a></li>
             <li><a href="#contact">Free Quote Request</a></li>
@@ -794,7 +820,7 @@
     "alternateName": "GHKC",
     "description": "Professional commercial kitchen equipment deep cleaning services in the Golden Horseshoe region of Ontario. Specializing in NFPA 96 compliant exhaust hood cleaning, commercial fryer deep cleaning, flat top and grill restoration, oven cleaning, stainless steel polishing, and recurring maintenance plans for restaurants, bars, hotels, and food service establishments.",
     "url": "https://goldenhorseshoekitchencleaning.ca",
-    "telephone": "+1-647-528-3807",
+    "telephone": "+1-289-228-6558",
     "email": "info.goldenhorseshoekitchen@gmail.com",
     "image": "https://goldenhorseshoekitchencleaning.ca/assets/hero-bg.jpg",
     "logo": "https://goldenhorseshoekitchencleaning.ca/assets/logo.png",
@@ -912,7 +938,7 @@
     "provider": {
       "@type": "LocalBusiness",
       "name": "Golden Horseshoe Kitchen Cleaning",
-      "telephone": "+1-647-528-3807"
+      "telephone": "+1-289-228-6558"
     },
     "areaServed": {
       "@type": "Place",
